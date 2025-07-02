@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rent Sony Alpha 6400 Camera – Affordable DSLR Rental in India</title>
+  <meta name="description" content="Rent the Sony Alpha 6400 DSLR camera at the best daily rates. Perfect for photography and video shoots. Book online and confirm via WhatsApp.">
+  <meta name="keywords" content="Sony Alpha 6400 rental, camera rental India, DSLR for rent, mirrorless camera, photography gear rental">
+  <meta name="author" content="Camera Rental Service">
+  <link rel="canonical" href="https://yourdomain.com/sony-alpha-6400.html" />
+
+  <!-- Open Graph (for social media preview) -->
+  <meta property="og:title" content="Rent Sony Alpha 6400 – Camera Rental India" />
+  <meta property="og:description" content="Affordable daily rental for the Sony Alpha 6400 DSLR camera. Book instantly via WhatsApp." />
+  <meta property="og:image" content="https://via.placeholder.com/800x400?text=Sony+Alpha+6400" />
+  <meta property="og:url" content="https://yourdomain.com/sony-alpha-6400.html" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .btn {
+      margin-top: 15px;
+      background: #25D366;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://via.placeholder.com/800x400?text=Sony+Alpha+6400" alt="Rent Sony Alpha 6400" />
+  <h1>Rent Sony Alpha 6400 DSLR Camera</h1>
+  <p>The Sony Alpha 6400 is a powerful mirrorless camera perfect for professional photography, vlogging, and filmmaking. Rent it now at the best daily rate and confirm your booking easily via WhatsApp.</p>
+  <p class="price">Rental Price: ₹1,000/day</p>
+
+  <label for="fromDate">From Date:</label>
+  <input type="date" id="fromDate" />
+
+  <label for="toDate">To Date:</label>
+  <input type="date" id="toDate" />
+
+  <a href="#" id="whatsappLink" class="btn">Check Availability on WhatsApp</a>
+</div>
+
+<script>
+  const phoneNumber = "917337224499";
+  const productName = "Sony Alpha 6400";
+
+  const link = document.getElementById("whatsappLink");
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const from = document.getElementById("fromDate").value;
+    const to = document.getElementById("toDate").value;
+
+    if (!from || !to) {
+      alert("Please select both dates.");
+      return;
+    }
+
+    const message = `Hi, I'm interested in renting the ${productName}.\nFrom date: ${from}\nTo date: ${to}\nIs it available?`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // Final WhatsApp API URL (exactly as you requested)
+    const whatsappURL = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
+
+    window.location.href = whatsappURL;
+  });
+</script>
+
+
+</body>
+</html>
