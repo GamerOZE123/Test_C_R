@@ -2,218 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Camera Rental Hub – DSLR, Mirrorless & GoPro Rentals</title>
-  <meta name="description" content="Affordable camera rentals – DSLR, mirrorless, GoPro, and lenses. Book easily via WhatsApp.">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      min-height: 100vh;
-      background: #f5f5f5;
-    }
-
-    aside {
-      width: 250px;
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-    }
-
-    aside h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #25D366;
-    }
-
-    aside nav a {
-      display: block;
-      color: #ddd;
-      text-decoration: none;
-      margin: 10px 0;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-
-    aside nav a:hover {
-      color: #25D366;
-    }
-
-    main {
-      flex: 1;
-      padding: 30px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 15px;
-    }
-
-    .product-card {
-      background: #fff;
-      border-radius: 10px;
-      width: 260px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-    }
-
-    .product-card .details {
-      padding: 15px;
-    }
-
-    .product-card h3 {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    .product-card p {
-      color: #555;
-      margin: 6px 0;
-      font-size: 14px;
-    }
-
-    .product-card a {
-      display: inline-block;
-      margin-top: 10px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    footer {
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #999;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      aside {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      main {
-        padding: 20px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rent professional cameras and gear easily." />
+  <title>ProCam Rentals</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <h1>📷 ProCam Rentals</h1>
+    <nav>
+      <a href="#cameras">Cameras</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<aside>
-  <h2>CameraRentalHub.in</h2>
-  <nav>
-    <a href="#dslrs">📷 DSLRs</a>
-    <a href="#mirrorless">📸 Mirrorless</a>
-    <a href="#gopro">🎥 Action Cameras</a>
-    <a href="#lenses">🔭 Lenses</a>
-    <a href="https://wa.me/917889448899" target="_blank">📱 WhatsApp Us</a>
-  </nav>
-</aside>
-
-<main>
-  <h1>Rent Cameras for Your Next Shoot</h1>
-  <p>Choose from our curated range of DSLRs, mirrorless cameras, GoPros, and lenses. Book in seconds via WhatsApp!</p>
-
-  <!-- DSLRs -->
-  <section id="dslrs">
-    <h2>📷 DSLR Cameras</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x170?text=Canon+200D" alt="Canon 200D">
-        <div class="details">
-          <h3>Canon 200D</h3>
-          <p>₹800/day</p>
-          <a href="canon-200d.html">Rent Now</a>
-        </div>
-      </div>
-      <!-- Add more DSLR cards here -->
-    </div>
+  <section class="hero">
+    <h2>Rent Cameras with Ease</h2>
+    <p>DSLRs, Mirrorless, Lenses, Drones, and more — Rent by the Day or Week.</p>
+    <a href="#cameras" class="btn">Explore Rentals</a>
   </section>
 
-  <!-- Mirrorless -->
-  <section id="mirrorless">
-    <h2>📸 Mirrorless Cameras</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x170?text=Sony+Alpha+6400" alt="Sony Alpha 6400">
-        <div class="details">
-          <h3>Sony Alpha 6400</h3>
-          <p>₹1,000/day</p>
-          <a href="sony-alpha-6400.html">Rent Now</a>
-        </div>
+  <section id="cameras" class="gallery">
+    <h2>Available Cameras</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/canon.jpg" alt="Canon DSLR" />
+        <h3>Canon EOS 90D</h3>
+        <p>₹800/day</p>
+        <button>Rent Now</button>
       </div>
-      <!-- Add more mirrorless cards here -->
-    </div>
-  </section>
-
-  <!-- Action Cameras -->
-  <section id="gopro">
-    <h2>🎥 Action Cameras</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x170?text=GoPro+Hero+10" alt="GoPro Hero 10">
-        <div class="details">
-          <h3>GoPro Hero 10</h3>
-          <p>₹700/day</p>
-          <a href="gopro-hero10.html">Rent Now</a>
-        </div>
+      <div class="card">
+        <img src="images/sony.jpg" alt="Sony Mirrorless" />
+        <h3>Sony A7 III</h3>
+        <p>₹1000/day</p>
+        <button>Rent Now</button>
+      </div>
+      <div class="card">
+        <img src="images/drone.jpg" alt="DJI Drone" />
+        <h3>DJI Mavic Air</h3>
+        <p>₹1200/day</p>
+        <button>Rent Now</button>
       </div>
     </div>
   </section>
 
-  <!-- Lenses -->
-  <section id="lenses">
-    <h2>🔭 Lenses</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x170?text=Canon+50mm+f1.8" alt="Canon 50mm f1.8 Lens">
-        <div class="details">
-          <h3>Canon 50mm f/1.8</h3>
-          <p>₹300/day</p>
-          <a href="#">Rent Now</a>
-        </div>
-      </div>
-    </div>
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Choose your camera gear</li>
+      <li>Select rental dates</li>
+      <li>Pay & pick up or get delivery</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@procamerentals.com</p>
+    <p>Phone: +91 98765 43210</p>
   </section>
 
   <footer>
-    &copy; 2025 CameraRentalHub.in — Built with ❤️ for local creators | <a href="https://wa.me/917889448899" style="color: #25D366;">WhatsApp Us</a>
+    <p>&copy; 2025 ProCam Rentals</p>
   </footer>
-</main>
 
+  <script src="script.js"></script>
 </body>
 </html>
